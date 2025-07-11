@@ -8,11 +8,149 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Helloworld</h1>
-    <h2>Helloworld</h2>
-    <h3>Helloworld</h3>
-    <h4>Helloworld</h4>
-    <h5>Helloworld</h5>
-    <h6>Helloworld</h6>
+    <div class="header">
+        <div class="header__search">
+            <img src="public/search.svg" alt="search icon">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="header__profile">
+            <img src="public/notifications.svg" alt="notifications icon">
+            <img src="" alt="" class="profile-icon">
+            <p class="profile-name">Rabii Banine</p>
+        </div>
+        <div class="header__greeting">
+            <img src="" alt="">
+            <p>Hi there,</p>
+            <h1>Rabii Banine (@Rabii)</h1>
+        </div>
+        <div class="header__actions">
+            <button class="button--action new">New</button>
+            <button class="button--action upload">Upload</button>
+            <button class="button--action share">Share</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <h1>Dashboard</h1>
+        </div>
+
+        <ul class="sidebar__links">
+            <li>
+                <img src="public/home.svg" alt="home icon">
+                <h2>Home</h2>
+            </li>
+            <li>
+                <img src="public/profile.svg" alt="profile icon">
+                <h2>Profile</h2>
+            </li>
+            <li>
+                <img src="public/messages.svg" alt="messages icon">
+                <h2>Messages</h2>
+            </li>
+            <li>
+                <img src="public/history.svg" alt="history icon">
+                <h2>History</h2>
+            </li>
+            <li>
+                <img src="public/tasks.svg" alt="tasks icon">
+                <h2>Tasks</h2>
+            </li>
+            <li>
+                <img src="public/communities.svg" alt="communities icon">
+                <h2>Communities</h2>
+            </li>
+        </ul>
+        
+        <ul class="sidebar__extras">
+            <li>
+                <img src="public/settings.svg" alt="settings icon">
+                <h2>Settings</h2>
+            </li>
+            <li>
+                <img src="public/support.svg" alt="support icon">
+                <h2>Support</h2>
+            </li>
+            <li>
+                <img src="public/privacy.svg" alt="privacy icon">
+                <h2>Privacy</h2>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="main__projects">
+            <div class="project-card">
+                <h3>heading1</h3>
+                <p>placeholder text 1</p>
+                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            </div>
+            <div class="project-card">
+                <h3>heading2</h3>
+                <p>placeholder text 2</p>
+                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            </div>
+            <div class="project-card">
+                <h3>heading3</h3>
+                <p>placeholder text 3</p>
+                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            </div>
+            <div class="project-card">
+                <h3>heading4</h3>
+                <p>placeholder text 4</p>
+                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            </div>
+            <div class="project-card">
+                <h3>heading5</h3>
+                <p>placeholder text 5</p>
+                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            </div>
+            <div class="project-card">
+                <h3>heading6</h3>
+                <p>placeholder text 6</p>
+                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            </div>
+        </div>
+        <div class="main__announcements">
+            <h2>Announcements</h2>
+            <div class="announcements__card">
+                <div class="announcements__card--section">
+                    <h4>heading 1</h4>
+                    <p>placeholder text 1</p>
+                </div>
+                <div class="announcements__card--section">
+                    <h4>heading 2</h4>
+                    <p>placeholder text 2</p>
+                </div>
+                <div class="announcements__card--section">
+                    <h4>heading 3</h4>
+                    <p>placeholder text 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="main__trending">
+            <div class="trending__profile">
+                <img src="" alt="">
+                <h5>@username1</h5>
+                <p>placeholdertext1</p>
+            </div>
+            <div class="trending__profile">
+                <img src="" alt="">
+                <h5>@username2</h5>
+                <p>placeholdertext2</p>
+            </div>
+            <div class="trending__profile">
+                <img src="" alt="">
+                <h5>@username3</h5>
+                <p>placeholdertext3</p>
+            </div>
+            <div class="trending__profile">
+                <img src="" alt="">
+                <h5>@username4</h5>
+                <p>placeholdertext4</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
