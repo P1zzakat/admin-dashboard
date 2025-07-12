@@ -5,18 +5,17 @@
     <style>
       .st0 {
         stroke-miterlimit: 10;
-        stroke-width: 66.67px;
       }
 
       .st0, .st1 {
         fill: none;
-        stroke: #000;
+        stroke: #fff;
+        stroke-width: 66.67px;
       }
 
       .st1 {
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 66.67px;
       }
     </style>
   </defs>

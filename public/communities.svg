@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13 20V18C13 15.2386 10.7614 13 8 13C5.23858 13 3 15.2386 3 18V20H13ZM13 20H21V19C21 16.0545 18.7614 14 16 14C14.5867 14 13.3103 14.6255 12.4009 15.6311M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7ZM18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 66.67px;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M433.33,666.67v-66.67c0-92.05-74.62-166.67-166.67-166.67s-166.67,74.62-166.67,166.67v66.67h333.33ZM433.33,666.67h266.67v-33.33c0-98.18-74.62-166.67-166.67-166.67-47.11,0-89.66,20.85-119.97,54.37M366.67,233.33c0,55.23-44.77,100-100,100s-100-44.77-100-100,44.77-100,100-100,100,44.77,100,100ZM600,300c0,36.82-29.85,66.67-66.67,66.67s-66.67-29.85-66.67-66.67,29.85-66.67,66.67-66.67,66.67,29.85,66.67,66.67Z"/>
 </svg>
