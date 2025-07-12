@@ -184,7 +184,7 @@ body {
 }
 
 .main {
-    box-shadow: inset 5px 5px 30px 1px rgba(0, 0, 0, 0.26);
+    box-shadow: inset 5px 5px 10px 1px rgba(0, 0, 0, 0.26);
 
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -280,6 +280,10 @@ body {
     display: flex;
     justify-self: end;
     gap: 1rem;
+}
+
+.project-card > .project-icons > img:hover {
+    cursor: pointer;
 }
 
 .main__announcements {
