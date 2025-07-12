@@ -10,43 +10,125 @@ body {
 
 .header {
     background-color: #ffffff;
-    box-shadow: 0 0 1rem;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template: max(100px, 10vh) max(100px, 10vh) / repeat(12, 1fr);
+    grid-template: 1fr 1fr / repeat(12, 1fr);
 
     padding: 1rem 2rem;
 }
 
-.header>.header__search {
+.header > .header__search {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
-.header>.header__profile {
+.header > .header__search > input {
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem 0 0.8rem 1rem;
+
+    background-color: #d649333a;
+    flex: 1;
+
+    transition: 0.5s all ease;
+}
+
+.header > .header__search > input::placeholder {
+    transition: 0.5s all ease;
+}
+
+.header > .header__search > input:focus::placeholder {
+    border: none;
+    transform: translate(0, -5px);
+    opacity: 0;
+}
+
+.header > .header__profile {
     grid-row: 1 / 2;
     grid-column: 10 / 13;
 
     justify-self: end;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.header>.header__greeting {
+.header > .header__profile > img {
+    width: 30px;
+}
+
+.header > .header__profile > img.profile-icon {
+    width: 50px;
+    border-radius: 2rem;
+    border: 2px solid #d64933;
+}
+
+.header > .header__greeting {
     grid-row: 2 / 3;
     grid-column: 1 / 7;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    font-weight: bold;
 }
 
-.header>.header__actions {
+.header > .header__greeting > div > h1 {
+    font-size: 1.4rem;
+}
+
+.header > .header__greeting > img {
+    width: 70px;
+    border: 2px solid #d64933;
+    border-radius: 4rem;
+}
+
+.header > .header__actions {
     grid-row: 2 / 3;
     grid-column: 8 / 13;
 
     justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header > .header__actions > button {
+    font-weight: bold;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #d64933;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.header > .header__actions > button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.493);
+}
+
+.header > .header__actions > button:active {
+    transform: translate(0, 3px);
+}
+
+.header > .header__search > img {
+    width: 30px;
 }
 
 .sidebar {
@@ -73,7 +155,7 @@ body {
     font-size: 1.5rem;
 }
 
-.sidebar>img.dashboard-image {
+.sidebar > img.dashboard-image {
     width: 50px;
 }
 
@@ -93,17 +175,119 @@ body {
 .sidebar a {
     text-decoration: none;
     color: white;
-    transition: 0.5s all ease
+    transition: 0.5s all ease;
 }
 
 .sidebar a:hover {
-    text-shadow: 0 0 1rem black;
+    text-shadow: 2px 2px 0 #3f251c77;
+    color: #d35d4b;
 }
 
-.header img {
-    width: 30px;
+.main {
+    box-shadow: inset 5px 5px 30px 1px rgba(0, 0, 0, 0.26);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+
+    padding: 2rem 1rem;
+}
+
+.main h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.main__projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.main__projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+
+.main__projects-container > .project-card {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 0.5rem;
+    border-left: 5px solid #d64933;
+
+    display: grid;
+    grid-template-rows: 1fr 150px 1fr;
+}
+
+.main__announcements > .announcements__card {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 0.5rem;
+}
+
+.announcements__card--section {
+    padding: 0.8rem 0;
+}
+
+.card > .announcements__card--section p {
+    font-size: 0.7rem;
+}
+
+.card > .announcements__card--section h3 {
+    font-size: 0.9rem;
+}
+
+.card > .announcements__card--section:not(:nth-child(3)) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.announcements__card--section:not(:nth-last-child) {
+    border-bottom: 1px solid black;
+}
+
+.main__trending > .card > .trending__profile {
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0;
+
+    align-items: center;
+}
+
+.main__trending > .card p {
+    font-size: 0.8rem;
+}
+
+.main h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.main p {
+    font-weight: light;
+    font-size: 0.9rem;
+    color: rgba(41, 41, 41, 0.87);
+}
+
+.project-card > .project-icons {
+    display: flex;
+    justify-self: end;
+    gap: 1rem;
+}
+
+.main__announcements {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .main img {
-    width: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
 }

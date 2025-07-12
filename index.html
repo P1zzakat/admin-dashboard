@@ -1,159 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="modern-normalize.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <div class="header__search">
-            <img src="public/search.svg" alt="search icon">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="header__profile">
-            <img src="public/notifications.svg" alt="notifications icon">
-            <img src="" alt="" class="profile-icon">
-            <p class="profile-name">Rabii Banine</p>
-        </div>
-        <div class="header__greeting">
-            <img src="" alt="">
-            <p>Hi there,</p>
-            <h1>Rabii Banine (@Rabii)</h1>
-        </div>
-        <div class="header__actions">
-            <button class="button--action new">New</button>
-            <button class="button--action upload">Upload</button>
-            <button class="button--action share">Share</button>
-        </div>
-    </div>
-
-    <div class="sidebar">
-        <img src="public/dashboard.svg" alt="dashboard icon" class="dashboard-image">
-        <a href="">
-            <h1>Dashboard</h1>
-        </a>
-
-        <img src="" alt="">
-        <h1></h1>
-
-        <img src="public/home.svg" alt="home icon">
-        <a href="">
-            <h2>Home</h2>
-        </a>
-        <img src="public/profile.svg" alt="profile icon">
-        <a href="">
-            <h2>Profile</h2>
-        </a>
-        <img src="public/messages.svg" alt="messages icon">
-        <a href="">
-            <h2>Messages</h2>
-        </a>
-        <img src="public/history.svg" alt="history icon">
-        <a href="">
-            <h2>History</h2>
-        </a>
-        <img src="public/tasks.svg" alt="tasks icon">
-        <a href="">
-            <h2>Tasks</h2>
-        </a>
-        <img src="public/communities.svg" alt="communities icon">
-        <a href="">
-            <h2>Communities</h2>
-        </a>
-        
-        <img src="" alt="">
-        <h1></h1>
-
-        <img src="public/settings.svg" alt="settings icon">
-        <a href="">
-            <h2>Settings</h2>
-        </a>
-        <img src="public/support.svg" alt="support icon">
-        <a href="">
-            <h2>Support</h2>
-        </a>
-        <img src="public/privacy.svg" alt="privacy icon">
-        <a href="">
-            <h2>Privacy</h2>
-        </a>
-    </div>
-
-    <div class="main">
-        <div class="main__projects">
-            <div class="project-card">
-                <h3>heading1</h3>
-                <p>placeholder text 1</p>
-                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="modern-normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__search">
+                <img src="public/search.svg" alt="search icon" />
+                <input type="text" placeholder="Search..." />
             </div>
-            <div class="project-card">
-                <h3>heading2</h3>
-                <p>placeholder text 2</p>
-                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
+            <div class="header__profile">
+                <img src="public/notifications.svg" alt="notifications icon" />
+                <img
+                    src="public/profile-icon.png"
+                    alt="profile icon"
+                    class="profile-icon"
+                />
+                <p class="profile-name">Rabii Banine</p>
             </div>
-            <div class="project-card">
-                <h3>heading3</h3>
-                <p>placeholder text 3</p>
-                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
-            </div>
-            <div class="project-card">
-                <h3>heading4</h3>
-                <p>placeholder text 4</p>
-                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
-            </div>
-            <div class="project-card">
-                <h3>heading5</h3>
-                <p>placeholder text 5</p>
-                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
-            </div>
-            <div class="project-card">
-                <h3>heading6</h3>
-                <p>placeholder text 6</p>
-                <div class="project-icons"><img src="public/favorite.svg" alt="favorite icon"><img src="public/watch.svg" alt="watch icon"><img src="public/share.svg" alt="share icon"></div>
-            </div>
-        </div>
-        <div class="main__announcements">
-            <h2>Announcements</h2>
-            <div class="announcements__card">
-                <div class="announcements__card--section">
-                    <h4>heading 1</h4>
-                    <p>placeholder text 1</p>
-                </div>
-                <div class="announcements__card--section">
-                    <h4>heading 2</h4>
-                    <p>placeholder text 2</p>
-                </div>
-                <div class="announcements__card--section">
-                    <h4>heading 3</h4>
-                    <p>placeholder text 3</p>
+            <div class="header__greeting">
+                <img src="public/profile-icon.png" alt="profile icon" />
+                <div>
+                    <p>Hi there,</p>
+                    <h1>Rabii Banine (@Rabii)</h1>
                 </div>
             </div>
-        </div>
-        <div class="main__trending">
-            <div class="trending__profile">
-                <img src="" alt="">
-                <h5>@username1</h5>
-                <p>placeholdertext1</p>
-            </div>
-            <div class="trending__profile">
-                <img src="" alt="">
-                <h5>@username2</h5>
-                <p>placeholdertext2</p>
-            </div>
-            <div class="trending__profile">
-                <img src="" alt="">
-                <h5>@username3</h5>
-                <p>placeholdertext3</p>
-            </div>
-            <div class="trending__profile">
-                <img src="" alt="">
-                <h5>@username4</h5>
-                <p>placeholdertext4</p>
+            <div class="header__actions">
+                <button class="button--action new">New</button>
+                <button class="button--action upload">Upload</button>
+                <button class="button--action share">Share</button>
             </div>
         </div>
-    </div>
 
-</body>
+        <div class="sidebar">
+            <img
+                src="public/dashboard.svg"
+                alt="dashboard icon"
+                class="dashboard-image"
+            />
+            <a href="">
+                <h1>Dashboard</h1>
+            </a>
+
+            <img src="" alt="" />
+            <h1></h1>
+
+            <img src="public/home.svg" alt="home icon" />
+            <a href="">
+                <h2>Home</h2>
+            </a>
+            <img src="public/profile.svg" alt="profile icon" />
+            <a href="">
+                <h2>Profile</h2>
+            </a>
+            <img src="public/messages.svg" alt="messages icon" />
+            <a href="">
+                <h2>Messages</h2>
+            </a>
+            <img src="public/history.svg" alt="history icon" />
+            <a href="">
+                <h2>History</h2>
+            </a>
+            <img src="public/tasks.svg" alt="tasks icon" />
+            <a href="">
+                <h2>Tasks</h2>
+            </a>
+            <img src="public/communities.svg" alt="communities icon" />
+            <a href="">
+                <h2>Communities</h2>
+            </a>
+
+            <img src="" alt="" />
+            <h1></h1>
+
+            <img src="public/settings.svg" alt="settings icon" />
+            <a href="">
+                <h2>Settings</h2>
+            </a>
+            <img src="public/support.svg" alt="support icon" />
+            <a href="">
+                <h2>Support</h2>
+            </a>
+            <img src="public/privacy.svg" alt="privacy icon" />
+            <a href="">
+                <h2>Privacy</h2>
+            </a>
+        </div>
+
+        <div class="main">
+            <div class="main__projects">
+                <h2>Your Projects</h2>
+                <div class="main__projects-container">
+                    <div class="project-card card">
+                        <h3>Laser Pointer Tracker 9000</h3>
+                        <p>
+                            An AI-powered system that logs and analyzes laser
+                            pointer movements to predict patterns and prepare
+                            ambush tactics. Also calculates success rate of
+                            pounces.
+                        </p>
+                        <div class="project-icons">
+                            <img
+                                src="public/favorite.svg"
+                                alt="favorite icon"
+                            /><img
+                                src="public/watch.svg"
+                                alt="watch icon"
+                            /><img src="public/share.svg" alt="share icon" />
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <h3>PawNet: Decentralized Exchange</h3>
+                        <p>
+                            A blockchain-based platform where cats can trade
+                            yarn, feathers, and cardboard box tokens. Powered by
+                            the purrstigious Meowthereum coin.
+                        </p>
+                        <div class="project-icons">
+                            <img
+                                src="public/favorite.svg"
+                                alt="favorite icon"
+                            /><img
+                                src="public/watch.svg"
+                                alt="watch icon"
+                            /><img src="public/share.svg" alt="share icon" />
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <h3>Hooman Behavior Analyzer</h3>
+                        <p>
+                            A surveillance project tracking feeding times, mood
+                            swings, and sudden furniture rearrangements. Outputs
+                            warnings like: “Hooman vacuuming soon. Retreat to
+                            under-bed bunker.”
+                        </p>
+                        <div class="project-icons">
+                            <img
+                                src="public/favorite.svg"
+                                alt="favorite icon"
+                            /><img
+                                src="public/watch.svg"
+                                alt="watch icon"
+                            /><img src="public/share.svg" alt="share icon" />
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <h3>ClawFit - Feline Fitness App</h3>
+                        <p>
+                            Counts scratching reps, windowsill jumps, and
+                            tail-chasing sprints. Includes motivational meows
+                            and leaderboard rankings.
+                        </p>
+                        <div class="project-icons">
+                            <img
+                                src="public/favorite.svg"
+                                alt="favorite icon"
+                            /><img
+                                src="public/watch.svg"
+                                alt="watch icon"
+                            /><img src="public/share.svg" alt="share icon" />
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <h3>Midnight Meow Choir Planner</h3>
+                        <p>
+                            An automated scheduling tool for neighborhood cats
+                            to coordinate their 3AM yowling with optimal
+                            acoustics and moon phase alignment.
+                        </p>
+                        <div class="project-icons">
+                            <img
+                                src="public/favorite.svg"
+                                alt="favorite icon"
+                            /><img
+                                src="public/watch.svg"
+                                alt="watch icon"
+                            /><img src="public/share.svg" alt="share icon" />
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <h3>Box Compatibility Simulator</h3>
+                        <p>
+                            3D software where cats test box sizes virtually
+                            before committing. Includes “Snugness Index” and
+                            “Collapse Risk Factor.” VR mode in beta.
+                        </p>
+                        <div class="project-icons">
+                            <img
+                                src="public/favorite.svg"
+                                alt="favorite icon"
+                            /><img
+                                src="public/watch.svg"
+                                alt="watch icon"
+                            /><img src="public/share.svg" alt="share icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__announcements">
+                <h2>Announcements</h2>
+                <div class="announcements__card card">
+                    <div class="announcements__card--section">
+                        <h3>Global Nap Synchronization Update Version 2.1</h3>
+                        <p>
+                            "All registered cats are required to sync naps with
+                            local sunbeam cycles for maximum warmth. Automatic
+                            purring will activate during REM."
+                        </p>
+                    </div>
+                    <div class="announcements__card--section">
+                        <h3>Litterbox Privacy Policy Changes</h3>
+                        <p>
+                            "To better respect feline dignity, we've updated our
+                            litterbox AI tracking to anonymize all... deposits.
+                            Data now used only for medical alerts."
+                        </p>
+                    </div>
+                    <div class="announcements__card--section">
+                        <h3>BoxFest 2025 Registrations Now Open!</h3>
+                        <p>
+                            "Annual competition for the best box-jumps,
+                            box-fits, and box-forts. New category: Creative
+                            Chewing. Hosted virtually at www.ififitsisit.com."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__trending">
+                <h2>Trending</h2>
+                <div class="card">
+                    <div class="trending__profile">
+                        <img src="public/pfp1.png" alt="profile icon" />
+                        <div class="text">
+                            <h3>@username1</h3>
+                            <p>placeholdertext1</p>
+                        </div>
+                    </div>
+                    <div class="trending__profile">
+                        <img src="public/pfp2.png" alt="profile icon" />
+                        <div class="text">
+                            <h3>@username2</h3>
+                            <p>placeholdertext2</p>
+                        </div>
+                    </div>
+                    <div class="trending__profile">
+                        <img src="public/pfp3.png" alt="profile icon" />
+                        <div class="text">
+                            <h3>@username3</h3>
+                            <p>placeholdertext3</p>
+                        </div>
+                    </div>
+                    <div class="trending__profile">
+                        <img src="public/pfp4.png" alt="profile icon" />
+                        <div class="text">
+                            <h3>@username4</h3>
+                            <p>placeholdertext4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
